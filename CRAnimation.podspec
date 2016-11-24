@@ -34,11 +34,16 @@ Pod::Spec.new do |s|
             cardAnimationView.source_files = 'Pod/CRWidget/CRCardAnimationView/*'
         end
 
+        widget.subspec 'CCWormHUD' do |wormHUD|
+            wormHUD.source_files = 'Pod/CRWidget/CCWormHUD/*'
+        end
+
         widget.subspec 'HZLaunchView' do |hzLaunchView|
             hzLaunchView.source_files = 'Pod/CRWidget/HZLaunchView/*'
         end
-        widget.subspec 'CRGatling' do |CRGatling|
-        CRGatling.source_files = 'Pod/CRWidget/CRGatling/*'
+
+        widget.subspec 'CRGatling' do |crGatling|
+            crGatling.source_files = 'Pod/CRWidget/CRGatling/*'
         end
 
     end
